@@ -1,0 +1,19 @@
+CREATE DATABASE parlour_db;
+USE parlour_db;
+
+CREATE TABLE services (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    price INT
+);
+
+CREATE TABLE bookings (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    service_id INT
+);
+
+INSERT INTO services VALUES
+(1,'Hair Cut',300),
+(2,'Facial',800),
+(3,'Massage',1000);
